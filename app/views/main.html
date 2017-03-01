@@ -1,0 +1,31 @@
+
+
+<div class="jumbotron col-md-12">
+  <div class="row">
+    <h1>News</h1>
+  </div>
+
+    <div class="row" ng-repeat="feed in feedList">
+      <h3>{{feed.topics.text}}</h3>
+
+      <div class="col-md-6">
+        <p><img ng-src="{{feed.questionUser.profilePicturePath}}" height="200"></p>
+        {{feed.questionUser.firstName}}
+        {{feed.questionUser.lastName}}
+      </div>
+
+      <div class="col-md-6">
+        <p><img ng-src="{{feed.answerUser.profilePicturePath}}" height="200"></p>
+        {{feed.answerUser.firstName}}
+        {{feed.answerUser.lastName}}
+      </div>
+          <!--{{feed}}-->
+    </div>
+
+
+  <!--<p class="lead">-->
+    <!--<img src="images/yeoman.png" alt="I'm Yeoman"><br>-->
+    <!--Always a pleasure scaffolding your apps.-->
+  <!--</p>-->
+  <!--<p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>-->
+</div>
