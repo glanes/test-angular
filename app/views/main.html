@@ -8,16 +8,21 @@
     <div class="row" ng-repeat="feed in feedList">
       <h3>{{feed.topics.text}}</h3>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <p><img ng-src="{{feed.questionUser.profilePicturePath}}" height="200"></p>
         {{feed.questionUser.firstName}}
         {{feed.questionUser.lastName}}
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <p><img ng-src="{{feed.answerUser.profilePicturePath}}" height="200"></p>
         {{feed.answerUser.firstName}}
         {{feed.answerUser.lastName}}
+      </div>
+      <div class="col-md-4">
+        <video id="my-video" class="video-js" controls preload="auto" width="300" height="200">
+          <source src="{{feed.kwickieVideo.lowQualityUrl}}" type='video/mp4'>
+        </video>
       </div>
           <!--{{feed}}-->
     </div>

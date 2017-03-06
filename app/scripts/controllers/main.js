@@ -8,8 +8,7 @@
  * Controller of the testAngularApp
  */
 angular.module('testAngularApp')
-  .controller('MainCtrl', function ($scope, AuthenticateService, FeedService) {
-
+  .controller('MainCtrl', function ($scope, AuthenticateService, FeedService, $sce) {
 
     AuthenticateService.getToken();
 
